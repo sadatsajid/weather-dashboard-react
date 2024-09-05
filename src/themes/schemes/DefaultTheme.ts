@@ -259,7 +259,7 @@ export const DefaultTheme = createTheme({
     width: "290px",
   },
   header: {
-    height: "80px",
+    height: "20px",
     background: colors.alpha.white[100],
     boxShadow: colors.shadows.cardSm,
     textColor: colors.secondary.main,

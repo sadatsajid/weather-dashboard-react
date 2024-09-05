@@ -3,7 +3,6 @@ import { Box, useTheme } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
 import Sidebar from './Sidebar';
-import Header from './Header';
 
 const SidebarLayout: FC = () => {
   const theme = useTheme();
@@ -27,7 +26,6 @@ const SidebarLayout: FC = () => {
         },
       }}
     >
-      <Header />
       <Sidebar />
       <Box
         sx={{
