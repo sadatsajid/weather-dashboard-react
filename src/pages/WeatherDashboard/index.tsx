@@ -76,7 +76,6 @@ const WeatherDashboard = () => {
                             <WeatherDetails data={data} />
                         </Grid>
                     </>
-
                 }
             </Grid>
         </>
