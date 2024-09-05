@@ -46,7 +46,7 @@ const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
 
 function Logo() {
   return (
-    <TooltipWrapper title="OBHAI Logo" arrow>
+    <TooltipWrapper title="MUI Logo" arrow>
       <LogoWrapper to="/app/view-weather">
         <LogoSignWrapper>
           <img src={muiLogo} alt="" width="80" />
