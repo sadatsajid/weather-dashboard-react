@@ -56,6 +56,7 @@ http://localhost:5173/
 * **src/components:** Define re-usable components
 * **src/contexts:** Entities/Interface setup of each features
 * **src/layouts:** Design application layouts (Sidebar, Topbar)
+* **src/lib:** Set up 3rd party libraries
 * **src/pages:**  Top level application screens
 * **src/providers:**  Define library providers for App.tsx
 * **src/themes:**  Define custom theme
