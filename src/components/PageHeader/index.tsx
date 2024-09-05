@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { ReactNode } from "react";
 
-type PageHeaderProps = {
+interface PageHeaderProps {
   title: string;
   subtitle: string;
   actionableItem: ReactNode;

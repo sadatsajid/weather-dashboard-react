@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react';
 import { ChildrenProps } from '../../types/shared';
 
-type SidebarContext = {
+interface SidebarContext {
   sidebarToggle: boolean;
   toggleSidebar: () => void;
   closeSidebar: () => void;
