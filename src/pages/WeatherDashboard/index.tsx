@@ -10,13 +10,12 @@ import { useFetchWeatherData } from "../../api/weather";
 import CircularProgressLoader from "../../components/CircularProgressLoader";
 import ErrorResponseMessage from "../../components/ErrorResponseMessage";
 import WeatherDetails from "../WeatherDetails";
+import LocationSearch from "./LocationSearch";
+import { useSearchStore } from "../../store";
 
 const WeatherDashboard = () => {
-    let coordinates = {
-        "lon": 90.4115,
-        "lat": 23.7134
-    };
-    const { data, error, isLoading } = useFetchWeatherData(coordinates);
+    const { coordinates } = useSearchStore();
+    const { data, error, isLoading } = useFetchWeatherData(coordinates || { lat: 0, lon: 0 });
 
     return (
         <>
@@ -25,6 +24,7 @@ const WeatherDashboard = () => {
                 <PageHeader
                     title="Today's Overview"
                     subtitle="Search by City Name and get today's weather updates"
+                    actionableItem={<LocationSearch />}
                 />
             </PageTitleWrapper>
             <Grid
@@ -65,7 +65,7 @@ const WeatherDashboard = () => {
                                         title="Wind Speed"
                                         icon={AirTwoToneIcon}
                                         iconColor="secondary"
-                                        value={data.wind.speed+ "meter/sec"}
+                                        value={data.wind.speed + "m/s"}
                                         linkText=""
                                         description=""
                                     />

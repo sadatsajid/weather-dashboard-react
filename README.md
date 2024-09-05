@@ -53,13 +53,13 @@ http://localhost:5173/
 ## Project Structure
 
 * **src/assets:** Images are stored here
-* **src/components:** API calls of each features using React Query
+* **src/components:** Define re-usable components
 * **src/contexts:** Entities/Interface setup of each features
-* **src/layouts:** API and library setup
-* **src/pages:**  Router setup, Providers & Factories
-* **src/providers:**  Top-level views or screens 
-* **src/themes:**  Top-level views or screens 
-* **src/types:**  Top-level views or screens 
+* **src/layouts:** Design application layouts (Sidebar, Topbar)
+* **src/pages:**  Top level application screens
+* **src/providers:**  Define library providers for App.tsx
+* **src/themes:**  Define custom theme
+* **src/types:**  Define types and interfaces
 
 ## Documentation is your best friend:
 

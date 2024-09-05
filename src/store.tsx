@@ -1,21 +1,18 @@
-import { create } from "zustand";
-import { persist } from "zustand/middleware";
-import { LocationData } from "./types/location";
+// store.ts
+import { create } from 'zustand';
+import { Coordinates } from './types/weather';
 
-interface StoreState {
-    locations: LocationData[]; 
-    setLocations: (locations: LocationData[]) => void; 
+
+interface SearchStore {
+    query: string;
+    setQuery: (query: string) => void;
+    coordinates: Coordinates | null;
+    setCoordinates: (coordinates: Coordinates | null) => void;
 }
 
-export const useStore = create(
-  persist<StoreState>(
-    (set) => ({
-      locations: [],
-
-      setLocations: (locations) => set(() => ({ locations })),
-    }),
-    {
-      name: "location-store",
-    }
-  )
-);
+export const useSearchStore = create<SearchStore>((set) => ({
+    query: '',
+    setQuery: (query: string) => set({ query }), // Update the query in the store
+    coordinates: null, // Initial coordinates are null
+    setCoordinates: (coordinates: Coordinates | null) => set({ coordinates }), // Update coordinates in the store
+}));
