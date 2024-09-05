@@ -8,7 +8,7 @@ import {
     styled,
     CardHeader
 } from '@mui/material';
-import { WeatherData } from '../../types/weather';
+import { WeatherData } from '../../types/Weather';
 
 const ListItemWrapper = styled(ListItem)(
     () => `

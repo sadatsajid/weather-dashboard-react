@@ -1,6 +1,6 @@
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { customAxiosApi } from "../lib/axios";
-import { Coordinates, WeatherData } from "../types/weather";
+import { Coordinates, WeatherData } from "../types/Weather";
 
 const fetchWeatherData = async (coord: Coordinates): Promise<WeatherData> => {
     const response = await customAxiosApi.get(
