@@ -24,7 +24,7 @@ function WeatherDetails({ data }: IWeatherDetails) {
 
     return (
         <Card>
-            <CardHeader title={`View Today's Condition: ${data.weather[0]?.description}`} />
+            <CardHeader title={`Today's Condition: ${data.weather[0]?.description}`} />
             <Divider />
             <List disablePadding component="nav">
                 <ListItemWrapper
