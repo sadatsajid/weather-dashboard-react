@@ -16,7 +16,7 @@ export default defineConfig({
           react: ['react', 'react-dom'],
           router: ['react-router-dom'],
           vendor: [
-            'axios', 'nprogress', 'react-helmet-async', '@tanstack/react-query'
+            'axios', 'nprogress', 'react-helmet-async', '@tanstack/react-query', 'zustand'
           ],
           'material-ui-core': [ // Core Components
             '@mui/material/Box', '@mui/material/Container', '@mui/material/Grid',
