@@ -4,6 +4,7 @@ import { Navigate, RouteObject } from "react-router";
 import SuspenseLoader from "./components/SuspenseLoader";
 import SidebarLayout from "./layouts/SidebarLayout";
 
+// HOC suspense loader
 const Loader = <P extends object>(Component: ComponentType<P>) =>
     function (props: P) {
         return (
