@@ -1,6 +1,6 @@
 // store.ts
 import { create } from 'zustand';
-import { Coordinates } from './types/Weather';
+import { Coordinates } from './types/weather';
 
 
 interface SearchStore {
