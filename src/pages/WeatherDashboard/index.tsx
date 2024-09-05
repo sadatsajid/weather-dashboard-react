@@ -9,7 +9,7 @@ import WeatherCard from "./WeatherCard"
 import { useFetchWeatherData } from "../../api/weather";
 import CircularProgressLoader from "../../components/CircularProgressLoader";
 import ErrorResponseMessage from "../../components/ErrorResponseMessage";
-import WeatherDetails from "../WeatherDetails";
+import WeatherDetails from "./WeatherDetails";
 import LocationSearch from "./LocationSearch";
 import { useSearchStore } from "../../store";
 
